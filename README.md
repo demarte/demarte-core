@@ -1,2 +1,3 @@
-# demarte-core
-A Swift reusable framework
+# DemarteCore
+
+A description of this package.
