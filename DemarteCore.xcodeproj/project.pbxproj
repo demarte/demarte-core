@@ -21,9 +21,12 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		OBJ_23 /* DemarteCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DemarteCore.swift */; };
+		22DBF0D6257BF15100C64321 /* DemarteCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0D5257BF15100C64321 /* DemarteCore.swift */; };
+		22DBF0DC257BF17300C64321 /* DemarteCore+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0DB257BF17300C64321 /* DemarteCore+Networking.swift */; };
+		22DBF0E2257BF1A300C64321 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0E1257BF1A300C64321 /* NetworkingTests.swift */; };
+		OBJ_23 /* DemarteCore+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DemarteCore+Color.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_41 /* DemarteCoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* DemarteCoreTests.swift */; };
+		OBJ_41 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ColorTests.swift */; };
 		OBJ_42 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
 		OBJ_44 /* DemarteCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "DemarteCore::DemarteCore::Product" /* DemarteCore.framework */; };
 /* End PBXBuildFile section */
@@ -36,16 +39,26 @@
 			remoteGlobalIDString = "DemarteCore::DemarteCore";
 			remoteInfo = DemarteCore;
 		};
+		22DBF0D2257BF13900C64321 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = OBJ_1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = "DemarteCore::DemarteCoreTests";
+			remoteInfo = DemarteCoreTests;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		22DBF0D5257BF15100C64321 /* DemarteCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemarteCore.swift; sourceTree = "<group>"; };
+		22DBF0DB257BF17300C64321 /* DemarteCore+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DemarteCore+Networking.swift"; sourceTree = "<group>"; };
+		22DBF0E1257BF1A300C64321 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
 		"DemarteCore::DemarteCore::Product" /* DemarteCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DemarteCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DemarteCore::DemarteCoreTests::Product" /* DemarteCoreTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DemarteCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_12 /* DemarteCoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemarteCoreTests.swift; sourceTree = "<group>"; };
+		OBJ_12 /* ColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* DemarteCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemarteCore.swift; sourceTree = "<group>"; };
+		OBJ_9 /* DemarteCore+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DemarteCore+Color.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +91,9 @@
 		OBJ_11 /* DemarteCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* DemarteCoreTests.swift */,
+				OBJ_12 /* ColorTests.swift */,
 				OBJ_13 /* XCTestManifests.swift */,
+				22DBF0E1257BF1A300C64321 /* NetworkingTests.swift */,
 			);
 			name = DemarteCoreTests;
 			path = Tests/DemarteCoreTests;
@@ -94,7 +108,7 @@
 			name = Products;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		OBJ_5 /*  */ = {
+		OBJ_5 = {
 			isa = PBXGroup;
 			children = (
 				OBJ_6 /* Package.swift */,
@@ -103,7 +117,6 @@
 				OBJ_14 /* Products */,
 				OBJ_17 /* README.md */,
 			);
-			name = "";
 			sourceTree = "<group>";
 		};
 		OBJ_7 /* Sources */ = {
@@ -117,7 +130,9 @@
 		OBJ_8 /* DemarteCore */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_9 /* DemarteCore.swift */,
+				OBJ_9 /* DemarteCore+Color.swift */,
+				22DBF0D5257BF15100C64321 /* DemarteCore.swift */,
+				22DBF0DB257BF17300C64321 /* DemarteCore+Networking.swift */,
 			);
 			name = DemarteCore;
 			path = Sources/DemarteCore;
@@ -189,7 +204,7 @@
 			knownRegions = (
 				en,
 			);
-			mainGroup = OBJ_5 /*  */;
+			mainGroup = OBJ_5;
 			productRefGroup = OBJ_14 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -207,7 +222,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_23 /* DemarteCore.swift in Sources */,
+				OBJ_23 /* DemarteCore+Color.swift in Sources */,
+				22DBF0D6257BF15100C64321 /* DemarteCore.swift in Sources */,
+				22DBF0DC257BF17300C64321 /* DemarteCore+Networking.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,7 +240,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_41 /* DemarteCoreTests.swift in Sources */,
+				OBJ_41 /* ColorTests.swift in Sources */,
+				22DBF0E2257BF1A300C64321 /* NetworkingTests.swift in Sources */,
 				OBJ_42 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -234,7 +252,7 @@
 		OBJ_35 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = "DemarteCore::DemarteCoreTests" /* DemarteCoreTests */;
-			targetProxy = "DemarteCore::DemarteCoreTests" /* DemarteCoreTests */;
+			targetProxy = 22DBF0D2257BF13900C64321 /* PBXContainerItemProxy */;
 		};
 		OBJ_45 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
