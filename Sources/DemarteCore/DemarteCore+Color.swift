@@ -2,7 +2,7 @@ import UIKit
 
 extension DemarteCore {
 
-  class Color {
+  public class Color {
 
     /// Allows you to convert a 6 digit hexadecimal string into a UIColor instance
     /// - Warming: The "#" symbol is stripped from the beginning of the string submitted here.

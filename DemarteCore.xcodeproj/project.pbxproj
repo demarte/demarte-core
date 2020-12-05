@@ -22,8 +22,11 @@
 
 /* Begin PBXBuildFile section */
 		22DBF0D6257BF15100C64321 /* DemarteCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0D5257BF15100C64321 /* DemarteCore.swift */; };
-		22DBF0DC257BF17300C64321 /* DemarteCore+Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0DB257BF17300C64321 /* DemarteCore+Networking.swift */; };
-		22DBF0E2257BF1A300C64321 /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0E1257BF1A300C64321 /* NetworkingTests.swift */; };
+		22DBF0DC257BF17300C64321 /* ImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0DB257BF17300C64321 /* ImageOperation.swift */; };
+		22DBF0E2257BF1A300C64321 /* ImageOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0E1257BF1A300C64321 /* ImageOperationTests.swift */; };
+		22DBF0F1257BF63800C64321 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0F0257BF63800C64321 /* ImageCache.swift */; };
+		22DBF0FC257BF67D00C64321 /* UIImage+Decoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0FB257BF67D00C64321 /* UIImage+Decoded.swift */; };
+		22DBF103257BF70400C64321 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF102257BF70400C64321 /* AsyncOperation.swift */; };
 		OBJ_23 /* DemarteCore+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DemarteCore+Color.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
 		OBJ_41 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ColorTests.swift */; };
@@ -50,8 +53,11 @@
 
 /* Begin PBXFileReference section */
 		22DBF0D5257BF15100C64321 /* DemarteCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemarteCore.swift; sourceTree = "<group>"; };
-		22DBF0DB257BF17300C64321 /* DemarteCore+Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DemarteCore+Networking.swift"; sourceTree = "<group>"; };
-		22DBF0E1257BF1A300C64321 /* NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingTests.swift; sourceTree = "<group>"; };
+		22DBF0DB257BF17300C64321 /* ImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOperation.swift; sourceTree = "<group>"; };
+		22DBF0E1257BF1A300C64321 /* ImageOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOperationTests.swift; sourceTree = "<group>"; };
+		22DBF0F0257BF63800C64321 /* ImageCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		22DBF0FB257BF67D00C64321 /* UIImage+Decoded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Decoded.swift"; sourceTree = "<group>"; };
+		22DBF102257BF70400C64321 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		"DemarteCore::DemarteCore::Product" /* DemarteCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DemarteCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DemarteCore::DemarteCoreTests::Product" /* DemarteCoreTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DemarteCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		OBJ_12 /* ColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
@@ -80,6 +86,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		22DBF0EF257BF60C00C64321 /* ImageOperation */ = {
+			isa = PBXGroup;
+			children = (
+				22DBF0FA257BF66A00C64321 /* ImageCache */,
+				22DBF0DB257BF17300C64321 /* ImageOperation.swift */,
+			);
+			path = ImageOperation;
+			sourceTree = "<group>";
+		};
+		22DBF0FA257BF66A00C64321 /* ImageCache */ = {
+			isa = PBXGroup;
+			children = (
+				22DBF0F0257BF63800C64321 /* ImageCache.swift */,
+				22DBF0FB257BF67D00C64321 /* UIImage+Decoded.swift */,
+			);
+			path = ImageCache;
+			sourceTree = "<group>";
+		};
+		22DBF101257BF6D400C64321 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				22DBF0EF257BF60C00C64321 /* ImageOperation */,
+				22DBF102257BF70400C64321 /* AsyncOperation.swift */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
 		OBJ_10 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +126,7 @@
 			children = (
 				OBJ_12 /* ColorTests.swift */,
 				OBJ_13 /* XCTestManifests.swift */,
-				22DBF0E1257BF1A300C64321 /* NetworkingTests.swift */,
+				22DBF0E1257BF1A300C64321 /* ImageOperationTests.swift */,
 			);
 			name = DemarteCoreTests;
 			path = Tests/DemarteCoreTests;
@@ -130,9 +163,9 @@
 		OBJ_8 /* DemarteCore */ = {
 			isa = PBXGroup;
 			children = (
+				22DBF101257BF6D400C64321 /* Operations */,
 				OBJ_9 /* DemarteCore+Color.swift */,
 				22DBF0D5257BF15100C64321 /* DemarteCore.swift */,
-				22DBF0DB257BF17300C64321 /* DemarteCore+Networking.swift */,
 			);
 			name = DemarteCore;
 			path = Sources/DemarteCore;
@@ -224,7 +257,10 @@
 			files = (
 				OBJ_23 /* DemarteCore+Color.swift in Sources */,
 				22DBF0D6257BF15100C64321 /* DemarteCore.swift in Sources */,
-				22DBF0DC257BF17300C64321 /* DemarteCore+Networking.swift in Sources */,
+				22DBF0F1257BF63800C64321 /* ImageCache.swift in Sources */,
+				22DBF0DC257BF17300C64321 /* ImageOperation.swift in Sources */,
+				22DBF103257BF70400C64321 /* AsyncOperation.swift in Sources */,
+				22DBF0FC257BF67D00C64321 /* UIImage+Decoded.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -241,7 +277,7 @@
 			buildActionMask = 0;
 			files = (
 				OBJ_41 /* ColorTests.swift in Sources */,
-				22DBF0E2257BF1A300C64321 /* NetworkingTests.swift in Sources */,
+				22DBF0E2257BF1A300C64321 /* ImageOperationTests.swift in Sources */,
 				OBJ_42 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
