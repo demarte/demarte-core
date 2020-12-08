@@ -21,6 +21,8 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
+		222EB76C257FB24700FB7866 /* MediaOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EB76B257FB24700FB7866 /* MediaOperation.swift */; };
+		222EB780257FB58500FB7866 /* MediaOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 222EB77A257FB4E600FB7866 /* MediaOperationTests.swift */; };
 		22DBF0D6257BF15100C64321 /* DemarteCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0D5257BF15100C64321 /* DemarteCore.swift */; };
 		22DBF0DC257BF17300C64321 /* ImageOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0DB257BF17300C64321 /* ImageOperation.swift */; };
 		22DBF0E2257BF1A300C64321 /* ImageOperationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0E1257BF1A300C64321 /* ImageOperationTests.swift */; };
@@ -50,6 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		222EB76B257FB24700FB7866 /* MediaOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaOperation.swift; sourceTree = "<group>"; };
+		222EB77A257FB4E600FB7866 /* MediaOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaOperationTests.swift; sourceTree = "<group>"; };
 		22DBF0D5257BF15100C64321 /* DemarteCore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemarteCore.swift; sourceTree = "<group>"; };
 		22DBF0DB257BF17300C64321 /* ImageOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOperation.swift; sourceTree = "<group>"; };
 		22DBF0E1257BF1A300C64321 /* ImageOperationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageOperationTests.swift; sourceTree = "<group>"; };
@@ -82,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		222EB76A257FB1F500FB7866 /* MediaOperation */ = {
+			isa = PBXGroup;
+			children = (
+				222EB76B257FB24700FB7866 /* MediaOperation.swift */,
+			);
+			path = MediaOperation;
+			sourceTree = "<group>";
+		};
 		22DBF0EF257BF60C00C64321 /* ImageOperation */ = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +115,7 @@
 		22DBF101257BF6D400C64321 /* Operations */ = {
 			isa = PBXGroup;
 			children = (
+				222EB76A257FB1F500FB7866 /* MediaOperation */,
 				22DBF0EF257BF60C00C64321 /* ImageOperation */,
 				22DBF102257BF70400C64321 /* AsyncOperation.swift */,
 			);
@@ -122,6 +135,7 @@
 			children = (
 				OBJ_13 /* XCTestManifests.swift */,
 				22DBF0E1257BF1A300C64321 /* ImageOperationTests.swift */,
+				222EB77A257FB4E600FB7866 /* MediaOperationTests.swift */,
 			);
 			name = DemarteCoreTests;
 			path = Tests/DemarteCoreTests;
@@ -251,6 +265,7 @@
 			files = (
 				22DBF0D6257BF15100C64321 /* DemarteCore.swift in Sources */,
 				22DBF0F1257BF63800C64321 /* ImageCache.swift in Sources */,
+				222EB76C257FB24700FB7866 /* MediaOperation.swift in Sources */,
 				22DBF0DC257BF17300C64321 /* ImageOperation.swift in Sources */,
 				22DBF103257BF70400C64321 /* AsyncOperation.swift in Sources */,
 				22DBF0FC257BF67D00C64321 /* UIImage+Decoded.swift in Sources */,
@@ -270,6 +285,7 @@
 			buildActionMask = 0;
 			files = (
 				22DBF0E2257BF1A300C64321 /* ImageOperationTests.swift in Sources */,
+				222EB780257FB58500FB7866 /* MediaOperationTests.swift in Sources */,
 				OBJ_42 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
