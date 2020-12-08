@@ -27,9 +27,7 @@
 		22DBF0F1257BF63800C64321 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0F0257BF63800C64321 /* ImageCache.swift */; };
 		22DBF0FC257BF67D00C64321 /* UIImage+Decoded.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF0FB257BF67D00C64321 /* UIImage+Decoded.swift */; };
 		22DBF103257BF70400C64321 /* AsyncOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22DBF102257BF70400C64321 /* AsyncOperation.swift */; };
-		OBJ_23 /* DemarteCore+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_9 /* DemarteCore+Color.swift */; };
 		OBJ_30 /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_6 /* Package.swift */; };
-		OBJ_41 /* ColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_12 /* ColorTests.swift */; };
 		OBJ_42 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = OBJ_13 /* XCTestManifests.swift */; };
 		OBJ_44 /* DemarteCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = "DemarteCore::DemarteCore::Product" /* DemarteCore.framework */; };
 /* End PBXBuildFile section */
@@ -60,11 +58,9 @@
 		22DBF102257BF70400C64321 /* AsyncOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncOperation.swift; sourceTree = "<group>"; };
 		"DemarteCore::DemarteCore::Product" /* DemarteCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DemarteCore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		"DemarteCore::DemarteCoreTests::Product" /* DemarteCoreTests.xctest */ = {isa = PBXFileReference; lastKnownFileType = file; path = DemarteCoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		OBJ_12 /* ColorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorTests.swift; sourceTree = "<group>"; };
 		OBJ_13 /* XCTestManifests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
 		OBJ_17 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		OBJ_6 /* Package.swift */ = {isa = PBXFileReference; explicitFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		OBJ_9 /* DemarteCore+Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DemarteCore+Color.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,7 +120,6 @@
 		OBJ_11 /* DemarteCoreTests */ = {
 			isa = PBXGroup;
 			children = (
-				OBJ_12 /* ColorTests.swift */,
 				OBJ_13 /* XCTestManifests.swift */,
 				22DBF0E1257BF1A300C64321 /* ImageOperationTests.swift */,
 			);
@@ -164,7 +159,6 @@
 			isa = PBXGroup;
 			children = (
 				22DBF101257BF6D400C64321 /* Operations */,
-				OBJ_9 /* DemarteCore+Color.swift */,
 				22DBF0D5257BF15100C64321 /* DemarteCore.swift */,
 			);
 			name = DemarteCore;
@@ -255,7 +249,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_23 /* DemarteCore+Color.swift in Sources */,
 				22DBF0D6257BF15100C64321 /* DemarteCore.swift in Sources */,
 				22DBF0F1257BF63800C64321 /* ImageCache.swift in Sources */,
 				22DBF0DC257BF17300C64321 /* ImageOperation.swift in Sources */,
@@ -276,7 +269,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 0;
 			files = (
-				OBJ_41 /* ColorTests.swift in Sources */,
 				22DBF0E2257BF1A300C64321 /* ImageOperationTests.swift in Sources */,
 				OBJ_42 /* XCTestManifests.swift in Sources */,
 			);
